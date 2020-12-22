@@ -1,0 +1,11 @@
+<form method="post" action="" style="font-weight: normal; font-size: 15px" class="mt-3">
+  <div class="">
+    <a routerLink="/" class="float-right">На главную <i class="fas fa-chevron-circle-right fa-lg"></i></a>
+    <span style="font-size: 21px; font-weight: bolder">Восстановить пароль</span>
+  </div><br/>
+  <div class="article-add-field-description">Ваш логин или E-Mail на сайте:</div>
+  <input name="email" type="text" style="width: 694px;" ngModel required #email="ngModel" email><br/>
+  <span *ngIf="email.invalid && email.touched" class="error">Это обязательное поле!</span>
+  <hr>
+  <button name="submit" class="btn rounded" type="submit" style="margin-top: 8px;">Отправить</button>
+</form>

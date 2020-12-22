@@ -1,0 +1,10 @@
+<div class="text-center mb-5" style="">
+  <span style="">Категории</span>
+  <div style=" margin-top: 25px;">
+    <ul class="">
+      <li *ngFor="let element of categories$; let i = index">
+        <a style="width: 230px" routerLink="/" type="button" class="btn rounded">{{element.name}}</a>
+      </li>
+    </ul>
+  </div>
+</div>

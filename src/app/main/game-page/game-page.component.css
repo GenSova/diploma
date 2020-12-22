@@ -1,0 +1,45 @@
+.game-image {
+  width: 330px;
+  height: 250px;
+}
+
+.column {
+  padding: 5px;
+  float: left;
+}
+a.link-subscribe, a.link-subscribe:hover {
+  background: green;
+  border-color: green;
+
+}
+a.link-unsubscribe, a.link-unsubscribe:hover {
+  background: red;
+  border-color: red;
+}
+a.link-subscribe, a.link-unsubscribe {
+  background: #DE5C02;
+  font-size: 13px;
+  border: 4px solid #DE5C02;
+  border-radius: 4px;
+  transition: 0.1s;
+
+  padding: 2px 2px;
+  text-decoration: none;
+  color: #eee;
+}
+.download-btn {
+  background-color: rgb(61, 215, 61);
+  padding: 12px 50px 12px 50px;
+  font-size: 26px;
+  text-transform: unset !important;
+  color: #FFF
+}
+.download-btn:hover {
+  background-color: #FF8027;
+}
+.i-am-centered {
+  margin: auto; max-width: 595px;
+}
+.activity {
+  color: #353535;
+}

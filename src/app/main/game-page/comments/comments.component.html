@@ -1,0 +1,35 @@
+<!-- Comments -->
+<div class="comments float-left" style="width: 700px; margin-left: 25px">
+  <div class="comments" style="clear: both; width: 700px">
+    <div class="card mb-3 wow fadeIn">
+      <div class="card-header font-weight-bold">Comments</div>
+      <div class="card-body">
+        <div class="form-group " *ngFor="let comment of comments$">
+          <small class="float-right" style="font-weight: normal">{{today | date}}</small>
+          <img class="float-left mr-2" style="width: 70px; height: 70px" src="https://s1.torrents-igruha.org/templates/gamestorgreen/dleimages/noavatar.png">
+          <strong for="replyFormComment">{{comment.name}}</strong><br><br>
+          <label for="replyFormName">{{"> "+comment.message}}</label>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3 wow fadeIn">
+    <div class="card-header font-weight-bold">Leave a comment</div>
+    <div class="card-body">
+      <form (submit)="addReview(newName.value, newComment.value)">
+        <div class="form-group">
+          <label for="replyFormName">Your name</label>
+          <input type="email" id="replyFormName" class="form-control" #newName>
+        </div>
+        <label for="replyFormComment">Your comment</label>
+        <textarea class="form-control" id="replyFormComment" rows="1" #newComment></textarea>
+        <br>
+        <div class="text-center mt-2">
+          <button class="btn btn-primary btn-md" type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<form #form method="post" id="sendmail" name="sendmail" action="https://formspree.io/f/mvovznrn" style="font-weight: normal" class="mb-5">
+  <div class="module-title mb-5 mt-3">
+    <a routerLink="/" class="module-title-articles">На главную <i class="fas fa-chevron-circle-right fa-lg"></i></a>
+    <h1 style="font-size: 21px; font-weight: bolder">Обратная связь</h1>
+  </div>
+
+  <div class="article-add-field-description">Ваше имя: <span class="impot">*</span></div>
+  <input type="text" maxlength="35" name="name" ngModel required #name="ngModel">
+  <span *ngIf="name.invalid && name.touched" class="error">Это обязательное поле!</span>
+  <hr>
+  <div class="article-add-field-description">Ваш E-Mail: <span class="impot">*</span></div>
+  <input name="_replyto" type="text" maxlength="35" ngModel required #_replyto="ngModel" email>
+  <span *ngIf="_replyto.invalid && _replyto.touched" class="error">Это обязательное поле!</span>
+  <hr>
+
+  <div class="article-add-field-description">Кому: <span class="impot">*</span></div>
+  <select name="recip"><option selected="selected" value="1">admin (Администраторы)</option>
+  </select>
+  <hr>
+  <div class="article-add-field-description">Тема: <span class="impot">*</span></div>
+  <input type="text" maxlength="45" name="subject"  ngModel required #subject="ngModel">
+  <span *ngIf="subject.invalid && subject.touched" class="error">Это обязательное поле!</span>
+  <hr>
+  <div class="article-add-field-description">Сообщение:</div>
+  <textarea name="message" class="f_textarea" ngModel required #message="ngModel"></textarea>
+  <span *ngIf="message.invalid && message.touched" class="error">Это обязательное поле!</span><br>
+  <div id="dle-captcha" style="display: none;"></div>
+
+
+  <button name="send_btn" class="btn rounded" type="submit" (click)="form.submit()">Отправить</button>
+
+  <input name="send" type="hidden" value="send">
+</form>

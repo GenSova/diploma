@@ -1,0 +1,451 @@
+{
+  "accounts": [
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "password1": "admin",
+      "login": "Admin",
+      "id": 1
+    },
+    {
+      "email": "kiko@gmail.com",
+      "password": "kikokiko",
+      "password1": "kikokiko",
+      "login": "Kiko",
+      "id": 2
+    }
+  ],
+  "games": [
+    {
+      "id": 1,
+      "name": "Crysis",
+      "image": "https://s01.riotpixels.net/data/c5/77/c5771139-43c3-4fde-8030-8f5c4be7477e.jpg.1080p.jpg/cover.crysis.767x1080.2011-10-18.1361.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Wolfenstein",
+      "image": "https://upload.wikimedia.org/wikipedia/ru/thumb/3/39/Wolfenstein-_The_New_Order_PC.jpg/274px-Wolfenstein-_The_New_Order_PC.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Far Cry",
+      "image": "https://upload.wikimedia.org/wikipedia/ru/4/42/Far_Cry_%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0.png"
+    },
+    {
+      "id": 4,
+      "name": "Dark Souls",
+      "image": "https://upload.wikimedia.org/wikipedia/ru/0/05/Dark_Souls_Cover_Art.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "Spider-Man",
+      "image": "https://www.game-debate.com/pic.php?g_id=23965&game=Spider-Man%202018"
+    },
+    {
+      "id": 6,
+      "name": "Batman Begins",
+      "image": "https://lostfilm.info/images/poster/2/12837.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Dark Souls II",
+      "image": "https://upload.wikimedia.org/wikipedia/ru/thumb/2/22/Dark_souls_2.jpg/274px-Dark_souls_2.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Dark Souls III",
+      "image": "https://image.api.playstation.com/cdn/EP0700/CUSA03365_00/OFMeAw2KhrdaEZAjW1f3tCIXbogkLpTC.png"
+    },
+    {
+      "id": 9,
+      "name": "Sekiro: SDT",
+      "image": "https://media.kg-portal.ru/games/s/shadowsdietwice/posters/shadowsdietwice_1.jpg"
+    },
+    {
+      "id": 10,
+      "name": "GTA V",
+      "image": "https://i.pinimg.com/originals/90/ce/83/90ce839000a380d33bcde2640a814da3.jpg"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Игры по сети"
+    },
+    {
+      "id": 2,
+      "name": "Репаки от Игрухи"
+    },
+    {
+      "id": 3,
+      "name": "Репаки от Хатаба"
+    },
+    {
+      "id": 4,
+      "name": "Репаки от Механиков"
+    },
+    {
+      "id": 5,
+      "name": "Игры 2021 года"
+    },
+    {
+      "id": 6,
+      "name": "Игры 2020 года"
+    },
+    {
+      "id": 7,
+      "name": "Игры 2019 года"
+    },
+    {
+      "id": 8,
+      "name": "Игры 2018 года"
+    },
+    {
+      "id": 9,
+      "name": "Для слабых ПК"
+    },
+    {
+      "id": 10,
+      "name": "Хороший сюжет"
+    },
+    {
+      "id": 11,
+      "name": "Хорошая графика"
+    },
+    {
+      "id": 12,
+      "name": "Открытый мир"
+    },
+    {
+      "id": 13,
+      "name": "От 1-го лица"
+    },
+    {
+      "id": 14,
+      "name": "От 3-го лица"
+    }
+  ],
+  "gameInfo": [
+    {
+      "id": 1,
+      "name": "Crysis",
+      "image": "https://s01.riotpixels.net/data/c5/77/c5771139-43c3-4fde-8030-8f5c4be7477e.jpg.1080p.jpg/cover.crysis.767x1080.2011-10-18.1361.jpg",
+      "year": "2007",
+      "category": "Action, Shooter, 3D, 1st Person",
+      "developer": "Crytek Studios",
+      "publisher": "Electronic Arts / GOG",
+      "type": "Лицензия",
+      "platform": "PC",
+      "crack": "Не требуется",
+      "language": "RUS|ENG",
+      "voice": "RUS|ENG",
+      "os": "XP / Vista / 7 / 8 / 10 (32-64bit)",
+      "processor": "Intel Pentium 4 2.8 Ghz (3.2 Ghz for Vista)",
+      "ram": "1 Gb (1.5 Gb for Vista)",
+      "videocard": "256 Mb | NVIDIA GeForce 6800 GT, ATI Radeon 9800",
+      "disk": "6,7 Gb",
+      "about": "Релиз конца 2007 года от немецкой компании-разработчика «Crytek». Лучший шутер года по версии «GameSpot». Для всех поклонников научной фантастики с динамическим сюжетом – «Crysis». Игра в лучших традициях «Far Cry». 2020 год на островах Лингшан ученые обнаруживают останки древнего инопланетного космического корабля, который в дальнейшем оказывается, только начальным связующим звеном, ведущим к разгадке многих тайн. В то же время вокруг вышеупомянутых островов разыгрывается конфликт между США и КНДР, что значительно осложняется деятельность научно-исследовательской экспедиции.",
+      "trailer": "https://www.youtube.com/embed/u6gsOQ8HZAU",
+      "screen1": "https://cdn.wccftech.com/wp-content/uploads/2020/06/Crysis-Remastered.jpg",
+      "screen2": "https://www.newgamenetwork.com/images/uploads/gallery/Crysis/image02.jpg",
+      "screen3": "https://www.overclockers.ua/news/games/127199-crysis-remastered-1.jpg",
+      "screen4": "https://www.mobygames.com/images/shots/l/262263-crysis-windows-screenshot-even-with-reduced-details-the-water.jpg",
+      "screen5": "https://i.imgur.com/t1MeEGL.jpg",
+      "screen6": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b6221f28-67ed-43d5-8500-82e620bc77d1/d2cwh7u-f98a8a89-851c-4519-b957-f1f65ebd9622.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYjYyMjFmMjgtNjdlZC00M2Q1LTg1MDAtODJlNjIwYmM3N2QxXC9kMmN3aDd1LWY5OGE4YTg5LTg1MWMtNDUxOS1iOTU3LWYxZjY1ZWJkOTYyMi5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.8qiwCOGoOYBWmDu6z61hNCiEsIeXmsnO-D3y4KSJcSQ",
+      "screen7": "https://i2.wp.com/itc.ua/wp-content/uploads/2020/06/apps.40699.14283419468788233.efdbb76d-7df7-4d66-8195-b274fe4f8be3.jpg",
+      "screen8": "https://i.playground.ru/p/N1Sz24n6-mwgzO7AblKJzA.jpeg",
+      "size": "6,7 Gb"
+    },
+    {
+      "id": 2,
+      "name": "Wolfenstein",
+      "image": "https://upload.wikimedia.org/wikipedia/ru/thumb/3/39/Wolfenstein-_The_New_Order_PC.jpg/274px-Wolfenstein-_The_New_Order_PC.jpg",
+      "year": "2009",
+      "category": "Action, Shooter, 3D, 1st Person",
+      "developer": "Raven Software",
+      "publisher": "Activision",
+      "type": "Лицензия",
+      "platform": "PC",
+      "crack": "Не требуется",
+      "language": "RUS|ENG",
+      "voice": "RUS|ENG",
+      "os": "XP / Vista / 7 / 8 / 10 (32-64bit)",
+      "processor": "Intel Pentium 4 2.8 Ghz (3.2 Ghz for Vista)",
+      "ram": "1 Gb (1.5 Gb for Vista)",
+      "videocard": "256 Mb | NVIDIA GeForce 6800 GT, ATI Radeon 9800",
+      "disk": "12 Gb",
+      "about": "Релиз конца 2007 года от немецкой компании-разработчика «Crytek». Лучший шутер года по версии «GameSpot». Для всех поклонников научной фантастики с динамическим сюжетом – «Crysis». Игра в лучших традициях «Far Cry». 2020 год на островах Лингшан ученые обнаруживают останки древнего инопланетного космического корабля, который в дальнейшем оказывается, только начальным связующим звеном, ведущим к разгадке многих тайн. В то же время вокруг вышеупомянутых островов разыгрывается конфликт между США и КНДР, что значительно осложняется деятельность научно-исследовательской экспедиции.",
+      "trailer": "https://www.youtube.com/embed/u6gsOQ8HZAU",
+      "screen1": "https://www.newgamenetwork.com/images/uploads/gallery/WolfensteinYB/WolfYB_12.jpg",
+      "screen2": "https://www.mobygames.com/images/shots/l/385021-wolfenstein-windows-screenshot-following-a-member-of-the-local.jpg",
+      "screen3": "https://ip.truetrophies.com/remote/apollo2.dl.playstation.net/cdn/UP1003/CUSA00314_00/FREE_CONTENTo2oPc7DPZrATqNxJGUxi/PREVIEW_SCREENSHOT10_155526.jpg?width=900",
+      "screen4": "https://www.newgamenetwork.com/images/uploads/gallery/wolf/Wolfenstein%2030Aug09-22.jpg",
+      "screen5": "https://www.mobygames.com/images/shots/l/385028-wolfenstein-windows-screenshot-these-vin-diesel-lookalikes.jpg",
+      "screen6": "https://www.newgamenetwork.com/thumbnailer.php?image=images/uploads/gallery/wolf/Wolfenstein%2030Aug09-11.jpg&type=Media_Large",
+      "screen7": "https://images.nintendolife.com/screenshots/97998/large.jpg",
+      "screen8": "https://ip.trueachievements.com/remote/www.trueachievements.com/customimages/069139.jpg?width=900",
+      "size": "12 Gb"
+    },
+    {
+      "id": 3,
+      "name": "Far Cry",
+      "image": "https://upload.wikimedia.org/wikipedia/ru/4/42/Far_Cry_%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0.png",
+      "year": "2004",
+      "category": "Action, Shooter, 3D, 1st Person",
+      "developer": "Crytek, Crytek Studios",
+      "publisher": "Ubisoft",
+      "type": "Лицензия",
+      "platform": "PC",
+      "crack": "Не требуется",
+      "language": "RUS|ENG",
+      "voice": "RUS|ENG",
+      "os": "XP / Vista / 7 / 8 / 10 (32-64bit)",
+      "processor": "Intel Pentium 4 2.8 Ghz (3.2 Ghz for Vista)",
+      "ram": "1 Gb (1.5 Gb for Vista)",
+      "videocard": "256 Mb | NVIDIA GeForce 6800 GT, ATI Radeon 9800",
+      "disk": "4,5 Gb",
+      "about": "Релиз конца 2007 года от немецкой компании-разработчика «Crytek». Лучший шутер года по версии «GameSpot». Для всех поклонников научной фантастики с динамическим сюжетом – «Crysis». Игра в лучших традициях «Far Cry». 2020 год на островах Лингшан ученые обнаруживают останки древнего инопланетного космического корабля, который в дальнейшем оказывается, только начальным связующим звеном, ведущим к разгадке многих тайн. В то же время вокруг вышеупомянутых островов разыгрывается конфликт между США и КНДР, что значительно осложняется деятельность научно-исследовательской экспедиции.",
+      "trailer": "https://www.youtube.com/embed/u6gsOQ8HZAU",
+      "screen1": "https://upload.wikimedia.org/wikipedia/ru/d/dc/Far_Cry_1_screenshot_-_mission01%2C_beach.png",
+      "screen2": "https://u.kanobu.ru/blog/12970//a6dcab31-8917-4aa4-8278-54fb973e6b54.jpg",
+      "screen3": "https://www.ixbt.com/video/itogi-video/pics/farcry/farcry_gf6600_1.jpg",
+      "screen4": "https://d22blwhp6neszm.cloudfront.net/42/411702/114272_1.png",
+      "screen5": "https://www.mobygames.com/images/shots/l/67067-far-cry-windows-screenshot-rigor-mortis-1-looks-like-there.jpg",
+      "screen6": "https://ip.trueachievements.com/remote/www.trueachievements.com/customimages/026873.jpg?width=900",
+      "screen7": "https://www.mobygames.com/images/shots/l/94229-far-cry-windows-screenshot-main-menu.jpg",
+      "screen8": "https://i.pinimg.com/originals/0d/b8/15/0db815b4e2829ae3ba1f77eab63ae750.jpg",
+      "size": "4,5 Gb"
+    },
+    {
+      "id": 4,
+      "name": "Dark Souls",
+      "image": "https://upload.wikimedia.org/wikipedia/ru/0/05/Dark_Souls_Cover_Art.jpeg",
+      "year": "2011",
+      "category": "Action, Shooter, 3D, 1st Person",
+      "developer": "From Software, n-Space",
+      "publisher": "From Software, Bandai Namco",
+      "type": "Лицензия",
+      "platform": "PC",
+      "crack": "Не требуется",
+      "language": "RUS|ENG",
+      "voice": "RUS|ENG",
+      "os": "XP / Vista / 7 / 8 / 10 (32-64bit)",
+      "processor": "Intel Pentium 4 2.8 Ghz (3.2 Ghz for Vista)",
+      "ram": "1 Gb (1.5 Gb for Vista)",
+      "videocard": "256 Mb | NVIDIA GeForce 6800 GT, ATI Radeon 9800",
+      "disk": "7.3 Gb",
+      "about": "Релиз конца 2007 года от немецкой компании-разработчика «Crytek». Лучший шутер года по версии «GameSpot». Для всех поклонников научной фантастики с динамическим сюжетом – «Crysis». Игра в лучших традициях «Far Cry». 2020 год на островах Лингшан ученые обнаруживают останки древнего инопланетного космического корабля, который в дальнейшем оказывается, только начальным связующим звеном, ведущим к разгадке многих тайн. В то же время вокруг вышеупомянутых островов разыгрывается конфликт между США и КНДР, что значительно осложняется деятельность научно-исследовательской экспедиции.",
+      "trailer": "https://www.youtube.com/embed/u6gsOQ8HZAU",
+      "screen1": "https://ip.trueachievements.com/remote/www.trueachievements.com/customimages/081546.jpg?width=900",
+      "screen2": "https://cdn.wccftech.com/wp-content/uploads/2018/05/Dark-Souls-Remastered-net-test-new-1-2060x1159.jpg",
+      "screen3": "https://static.bandainamcoent.eu/high/dark-souls/dark-souls-hd/02-screenshots/1-april/enemy2.jpg",
+      "screen4": "https://i.pinimg.com/originals/52/2b/b2/522bb2067591501423f6e6c569585f92.jpg",
+      "screen5": "https://static.giantbomb.com/uploads/original/15/155222/2300088-ju5RL.jpg",
+      "screen6": "https://external-preview.redd.it/_mfiklPNHnTQipj2UZ4iP2gjIAlnvbOrv1Rkr2INlxo.jpg?auto=webp&s=dbd2ccdb2982f727a6031604c9a72ea9b719ca58",
+      "screen7": "https://darksouls.wiki.fextralife.com/file/Dark-Souls/Beaconfire.jpg",
+      "screen8": "https://external-preview.redd.it/_mfiklPNHnTQipj2UZ4iP2gjIAlnvbOrv1Rkr2INlxo.jpg?auto=webp&s=dbd2ccdb2982f727a6031604c9a72ea9b719ca58",
+      "size": "7.3 Gb"
+    },
+    {
+      "id": 5,
+      "name": "Spider-Man",
+      "image": "https://www.game-debate.com/pic.php?g_id=23965&game=Spider-Man%202018",
+      "year": "2018",
+      "category": "Action, Shooter, 3D, 1st Person",
+      "developer": "Insomniac Games",
+      "publisher": "Sony Interactive Entertainment",
+      "type": "Лицензия",
+      "platform": "PC",
+      "crack": "Не требуется",
+      "language": "RUS|ENG",
+      "voice": "RUS|ENG",
+      "os": "XP / Vista / 7 / 8 / 10 (32-64bit)",
+      "processor": "Intel Pentium 4 2.8 Ghz (3.2 Ghz for Vista)",
+      "ram": "1 Gb (1.5 Gb for Vista)",
+      "videocard": "256 Mb | NVIDIA GeForce 6800 GT, ATI Radeon 9800",
+      "disk": "72 Gb",
+      "about": "Релиз конца 2007 года от немецкой компании-разработчика «Crytek». Лучший шутер года по версии «GameSpot». Для всех поклонников научной фантастики с динамическим сюжетом – «Crysis». Игра в лучших традициях «Far Cry». 2020 год на островах Лингшан ученые обнаруживают останки древнего инопланетного космического корабля, который в дальнейшем оказывается, только начальным связующим звеном, ведущим к разгадке многих тайн. В то же время вокруг вышеупомянутых островов разыгрывается конфликт между США и КНДР, что значительно осложняется деятельность научно-исследовательской экспедиции.",
+      "trailer": "https://www.youtube.com/embed/u6gsOQ8HZAU",
+      "screen1": "https://gematsu.com/wp-content/uploads/2018/08/Marvels-Spider-Man_08-02-18.jpg",
+      "screen2": "https://gamingbolt.com/wp-content/uploads/2018/08/Spider-Man-Screenshot-7.jpg",
+      "screen3": "https://cdn3.dualshockers.com/wp-content/uploads/2018/08/Spider-Man_PS4_Preview_Wall_1532954597.jpg",
+      "screen4": "https://sm.ign.com/t/ign_ru/screenshot/default/marvels-spider-man-screen-03-ps4-us-29mar18_9unu.1280.jpg",
+      "screen5": "https://i.pinimg.com/736x/17/bd/8c/17bd8c2488a9a3b5e804068648b5613b.jpg",
+      "screen6": "https://www.newgamenetwork.com/images/uploads/gallery/SpiderMan/msm_06.jpg",
+      "screen7": "https://cdn.flickeringmyth.com/wp-content/uploads/2018/08/Spider-Man-PS4-screenshots-1-600x338.jpg",
+      "screen8": "https://images.pushsquare.com/screenshots/92140/large.jpg",
+      "size": "72 Gb"
+    },
+    {
+      "id": 6,
+      "name": "Batman Begins",
+      "image": "https://lostfilm.info/images/poster/2/12837.jpg",
+      "year": "2007",
+      "category": "Action, Shooter, 3D, 1st Person",
+      "developer": "Crytek Studios",
+      "publisher": "Electronic Arts / GOG",
+      "type": "Лицензия",
+      "platform": "PC",
+      "crack": "Не требуется",
+      "language": "RUS|ENG",
+      "voice": "RUS|ENG",
+      "os": "XP / Vista / 7 / 8 / 10 (32-64bit)",
+      "processor": "Intel Pentium 4 2.8 Ghz (3.2 Ghz for Vista)",
+      "ram": "1 Gb (1.5 Gb for Vista)",
+      "videocard": "256 Mb | NVIDIA GeForce 6800 GT, ATI Radeon 9800",
+      "disk": "6,7 Gb",
+      "about": "Релиз конца 2007 года от немецкой компании-разработчика «Crytek». Лучший шутер года по версии «GameSpot». Для всех поклонников научной фантастики с динамическим сюжетом – «Crysis». Игра в лучших традициях «Far Cry». 2020 год на островах Лингшан ученые обнаруживают останки древнего инопланетного космического корабля, который в дальнейшем оказывается, только начальным связующим звеном, ведущим к разгадке многих тайн. В то же время вокруг вышеупомянутых островов разыгрывается конфликт между США и КНДР, что значительно осложняется деятельность научно-исследовательской экспедиции.",
+      "trailer": "https://www.youtube.com/embed/u6gsOQ8HZAU",
+      "screen1": "https://www.mobygames.com/images/shots/l/212206-batman-begins-xbox-screenshot-batman-will-more-often-find.jpg",
+      "screen2": "https://media.moddb.com/images/games/1/73/72548/4scr.jpg",
+      "screen3": "https://images9.gry-online.pl/galeria/galeria_duze3/422504609.jpg",
+      "screen4": "https://www.mobygames.com/images/shots/l/212203-batman-begins-xbox-screenshot-one-on-one-with-armed-ninja.jpg",
+      "screen5": "https://media.moddb.com/cache/images/games/1/73/72548/thumb_620x2000/3scr.jpg",
+      "screen6": "https://screenshots.gamer-info.com/batman-begins/4860.jpg",
+      "screen7": "https://www.mobygames.com/images/shots/l/212205-batman-begins-xbox-screenshot-on-a-speeding-train.jpg",
+      "screen8": "https://screenshots.gamer-info.com/batman-begins/4866.jpg",
+      "size": "6,7 Gb"
+    },
+    {
+      "id": 7,
+      "name": "Dark Souls II",
+      "image": "https://upload.wikimedia.org/wikipedia/ru/thumb/2/22/Dark_souls_2.jpg/274px-Dark_souls_2.jpg",
+      "year": "2007",
+      "category": "Action, Shooter, 3D, 1st Person",
+      "developer": "Crytek Studios",
+      "publisher": "Electronic Arts / GOG",
+      "type": "Лицензия",
+      "platform": "PC",
+      "crack": "Не требуется",
+      "language": "RUS|ENG",
+      "voice": "RUS|ENG",
+      "os": "XP / Vista / 7 / 8 / 10 (32-64bit)",
+      "processor": "Intel Pentium 4 2.8 Ghz (3.2 Ghz for Vista)",
+      "ram": "1 Gb (1.5 Gb for Vista)",
+      "videocard": "256 Mb | NVIDIA GeForce 6800 GT, ATI Radeon 9800",
+      "disk": "6,7 Gb",
+      "about": "Релиз конца 2007 года от немецкой компании-разработчика «Crytek». Лучший шутер года по версии «GameSpot». Для всех поклонников научной фантастики с динамическим сюжетом – «Crysis». Игра в лучших традициях «Far Cry». 2020 год на островах Лингшан ученые обнаруживают останки древнего инопланетного космического корабля, который в дальнейшем оказывается, только начальным связующим звеном, ведущим к разгадке многих тайн. В то же время вокруг вышеупомянутых островов разыгрывается конфликт между США и КНДР, что значительно осложняется деятельность научно-исследовательской экспедиции.",
+      "trailer": "https://www.youtube.com/embed/u6gsOQ8HZAU",
+      "screen1": "https://static.gamespot.com/uploads/original/1535/15354745/2491773-2654547852-23632.jpg",
+      "screen2": "https://cdn.wccftech.com/wp-content/uploads/2014/06/Dark-Souls-2-4K-16.png",
+      "screen3": "https://steamuserimages-a.akamaihd.net/ugc/831386918219374768/FA8E6766D676D2F8DCC33A1AD4855DEF25E75A41/",
+      "screen4": "https://cdn.mos.cms.futurecdn.net/0a08c1fd1c11cefcbdf6b8b5476fcf02.jpg",
+      "screen5": "https://www.newgamenetwork.com/images/uploads/gallery/DarkSouls2/ds2_06.jpg",
+      "screen6": "https://cdn3.dualshockers.com/wp-content/uploads/2014/11/dark_souls_ii-2484014.jpg",
+      "screen7": "https://www.mobygames.com/images/shots/l/784705-dark-souls-ii-windows-screenshot-wazzup-yeah-it-s-me-did-plastic.png",
+      "screen8": "https://im.ziffdavisinternational.com/ign_ap/screenshot/n/new-dark-souls-2-screenshots-reveal-characters/new-dark-souls-2-screenshots-reveal-characters_chwn.jpg",
+      "size": "6,7 Gb"
+    },
+    {
+      "id": 8,
+      "name": "Dark Souls III",
+      "image": "https://image.api.playstation.com/cdn/EP0700/CUSA03365_00/OFMeAw2KhrdaEZAjW1f3tCIXbogkLpTC.png",
+      "year": "2007",
+      "category": "Action, Shooter, 3D, 1st Person",
+      "developer": "Crytek Studios",
+      "publisher": "Electronic Arts / GOG",
+      "type": "Лицензия",
+      "platform": "PC",
+      "crack": "Не требуется",
+      "language": "RUS|ENG",
+      "voice": "RUS|ENG",
+      "os": "XP / Vista / 7 / 8 / 10 (32-64bit)",
+      "processor": "Intel Pentium 4 2.8 Ghz (3.2 Ghz for Vista)",
+      "ram": "1 Gb (1.5 Gb for Vista)",
+      "videocard": "256 Mb | NVIDIA GeForce 6800 GT, ATI Radeon 9800",
+      "disk": "6,7 Gb",
+      "about": "Релиз конца 2007 года от немецкой компании-разработчика «Crytek». Лучший шутер года по версии «GameSpot». Для всех поклонников научной фантастики с динамическим сюжетом – «Crysis». Игра в лучших традициях «Far Cry». 2020 год на островах Лингшан ученые обнаруживают останки древнего инопланетного космического корабля, который в дальнейшем оказывается, только начальным связующим звеном, ведущим к разгадке многих тайн. В то же время вокруг вышеупомянутых островов разыгрывается конфликт между США и КНДР, что значительно осложняется деятельность научно-исследовательской экспедиции.",
+      "trailer": "https://www.youtube.com/embed/u6gsOQ8HZAU",
+      "screen1": "https://cdn.vox-cdn.com/thumbor/yx5syTUG6h-g4E-odlGPTC8qsYY=/148x0:1768x1080/1200x800/filters:focal(148x0:1768x1080)/cdn.vox-cdn.com/uploads/chorus_image/image/46485808/dark_souls_3.0.0.jpg",
+      "screen2": "https://www.newgamenetwork.com/images/uploads/gallery/DarkSouls3/ds3_07.jpg",
+      "screen3": "https://hips.hearstapps.com/digitalspyuk.cdnds.net/16/04/1453976401-gaming-dark-souls-3-screenshot-04.jpg",
+      "screen4": "https://i.pinimg.com/originals/f4/63/09/f46309f692271634ea6dab94d80d2221.jpg",
+      "screen5": "https://tech4gamers.com/wp-content/uploads/2015/08/Dark-Souls-3-3.jpg",
+      "screen6": "https://www.newgamenetwork.com/images/uploads/gallery/DarkSouls3/ds3_09.jpg",
+      "screen7": "https://gematsu.com/wp-content/uploads/2015/06/Dark-Souls-3-Leak_06-05-15_013.jpg",
+      "screen8": "https://www.destructoid.com//ul/293409-h1.jpg",
+      "size": "6,7 Gb"
+    },
+    {
+      "id": 9,
+      "name": "Sekiro: SDT",
+      "image": "https://media.kg-portal.ru/games/s/shadowsdietwice/posters/shadowsdietwice_1.jpg",
+      "year": "2007",
+      "category": "Action, Shooter, 3D, 1st Person",
+      "developer": "Crytek Studios",
+      "publisher": "Electronic Arts / GOG",
+      "type": "Лицензия",
+      "platform": "PC",
+      "crack": "Не требуется",
+      "language": "RUS|ENG",
+      "voice": "RUS|ENG",
+      "os": "XP / Vista / 7 / 8 / 10 (32-64bit)",
+      "processor": "Intel Pentium 4 2.8 Ghz (3.2 Ghz for Vista)",
+      "ram": "1 Gb (1.5 Gb for Vista)",
+      "videocard": "256 Mb | NVIDIA GeForce 6800 GT, ATI Radeon 9800",
+      "disk": "6,7 Gb",
+      "about": "Релиз конца 2007 года от немецкой компании-разработчика «Crytek». Лучший шутер года по версии «GameSpot». Для всех поклонников научной фантастики с динамическим сюжетом – «Crysis». Игра в лучших традициях «Far Cry». 2020 год на островах Лингшан ученые обнаруживают останки древнего инопланетного космического корабля, который в дальнейшем оказывается, только начальным связующим звеном, ведущим к разгадке многих тайн. В то же время вокруг вышеупомянутых островов разыгрывается конфликт между США и КНДР, что значительно осложняется деятельность научно-исследовательской экспедиции.",
+      "trailer": "https://www.youtube.com/embed/u6gsOQ8HZAU",
+      "screen1": "https://s01.riotpixels.net/data/12/1e/121ea766-0100-451a-97b4-99d1c679c6dc.jpg/screenshot.sekiro-shadows-die-twice.1920x1080.2019-04-01.66.jpg",
+      "screen2": "https://i.pinimg.com/originals/d1/fc/47/d1fc478ecf3ce2a2279ee34616d6a674.jpg",
+      "screen3": "https://www.newgamenetwork.com/images/uploads/gallery/Sekiro/sekiroe3_01.jpg",
+      "screen4": "https://ip.truetrophies.com/remote/www.truetrophies.com/customimages/052286.jpg?width=900",
+      "screen5": "https://i.insider.com/5c86ca4d26289841e77fd254?width=1100&format=jpeg&auto=webp",
+      "screen6": "https://www.gamersyde.com/newsv3/e3_sekiro_shadows_die_twice_screenshots-20122.jpg",
+      "screen7": "https://cdn3.dualshockers.com/wp-content/uploads/2018/06/Sekiro_08-PR-Embargo-6.11@-3PM.jpg",
+      "screen8": "https://www.newgamenetwork.com/images/uploads/gallery/Sekiro/sekiroe3_05.jpg",
+      "size": "6,7 Gb"
+    },
+    {
+      "id": 10,
+      "name": "GTA V",
+      "image": "https://i.pinimg.com/originals/90/ce/83/90ce839000a380d33bcde2640a814da3.jpg",
+      "year": "2007",
+      "category": "Action, Shooter, 3D, 1st Person",
+      "developer": "Crytek Studios",
+      "publisher": "Electronic Arts / GOG",
+      "type": "Лицензия",
+      "platform": "PC",
+      "crack": "Не требуется",
+      "language": "RUS|ENG",
+      "voice": "RUS|ENG",
+      "os": "XP / Vista / 7 / 8 / 10 (32-64bit)",
+      "processor": "Intel Pentium 4 2.8 Ghz (3.2 Ghz for Vista)",
+      "ram": "1 Gb (1.5 Gb for Vista)",
+      "videocard": "256 Mb | NVIDIA GeForce 6800 GT, ATI Radeon 9800",
+      "disk": "6,7 Gb",
+      "about": "Релиз конца 2007 года от немецкой компании-разработчика «Crytek». Лучший шутер года по версии «GameSpot». Для всех поклонников научной фантастики с динамическим сюжетом – «Crysis». Игра в лучших традициях «Far Cry». 2020 год на островах Лингшан ученые обнаруживают останки древнего инопланетного космического корабля, который в дальнейшем оказывается, только начальным связующим звеном, ведущим к разгадке многих тайн. В то же время вокруг вышеупомянутых островов разыгрывается конфликт между США и КНДР, что значительно осложняется деятельность научно-исследовательской экспедиции.",
+      "trailer": "https://www.youtube.com/embed/u6gsOQ8HZAU",
+      "screen1": "https://www.rockstargames.com/V/img/global/screenshots/480-640.jpg",
+      "screen2": "https://www.igta5.com/images/official-screenshot-pc-alamo-sea.jpg",
+      "screen3": "https://www.igta5.com/images/official-screenshot-pc-vinewood-cars.jpg",
+      "screen4": "https://i.pinimg.com/originals/e9/80/7c/e9807ca84b2453fc76f47232b261a5ef.jpg",
+      "screen5": "https://cdn.wccftech.com/wp-content/uploads/2015/01/bCVF8Lq.jpg",
+      "screen6": "https://www.igta5.com/images/official-screenshot-pc-sunrise-in-grapeseed.jpg",
+      "screen7": "https://www.gtabase.com/igallery/901-1000/GTA5_230_Michael_Landscape-993-1080.jpg",
+      "screen8": "https://i.pinimg.com/originals/60/2f/c4/602fc4d7d43d81d83ce50c4c924969d8.jpg",
+      "size": "6,7 Gb"
+    }
+  ],
+  "subscribes": [
+
+  ],
+  "comments": [
+    {
+      "name": "Самад",
+      "message": "Крутая игра! 10 из 10"
+    },
+    {
+      "name": "Дастан",
+      "message": "Игра в целом неплохая :)"
+    },
+    {
+      "name": "Алмас",
+      "message": "Мне больше по душе стратегии"
+    },
+    {
+      "name": "Султан",
+      "message": "Не понял как скачивать"
+    }
+  ]
+}

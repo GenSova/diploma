@@ -1,0 +1,27 @@
+ul {
+  list-style-type: none;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+.btn {
+  background-color: rgba(97, 146, 3, 0.92);
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  padding: 6px 18px;
+  text-transform: unset !important;
+  text-align: left;
+}
+.btn:hover {
+  background-color: #FF8027;
+}
+li {
+  margin-bottom: 0;
+}
+span {
+  font-size: 19.5px;
+  font-weight: normal;
+}
+a {
+  font-weight: normal;
+}

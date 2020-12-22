@@ -1,0 +1,128 @@
+<!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg" style="background-color: #1E1E1E; height: 55px">
+  <div class="container">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+          aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+    <ul class="navbar-nav" style="font-size: 14px">
+      <li class="nav-item">
+        <div class="vertical"></div>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/" class="nav-link">Новые игры</a>
+      </li>
+      <li class="nav-item">
+        <div class="vertical"></div>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/" class="nav-link">Игры 2020 года</a>
+      </li>
+      <li class="nav-item">
+        <div class="vertical"></div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/contacts">Контакты</a>
+      </li>
+      <li class="nav-item">
+        <div class="vertical"></div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" routerLink="/disclaimer">Правообладателям</a>
+      </li>
+      <li class="nav-item">
+        <div class="vertical"></div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" routerLink="/faq">Решение проблем (FAQ)</a>
+      </li>
+      <li class="nav-item">
+        <div class="vertical"></div>
+      </li>
+    </ul>
+
+    <!--      No account-->
+      <ul class="navbar-nav ml-auto nav-flex-icons" *ngIf="!loginStatus">
+        <li class="nav-item dropdown" >
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+             aria-haspopup="true" aria-expanded="false">
+            <div style="float: left; text-align: right" class="mt-0">
+          <span class="login-link" style="font-size: 14px;">Войти<br/>
+            <span class="registration" style="font-size: 9px; display: block">Регистрация</span></span>
+            </div>
+            <img class="ml-1" style="width: 34px; height: 34px" src="https://s1.torrents-igruha.org/templates/gamestorgreen/dleimages/noavatar.png">
+          </a>
+
+        <app-login [searchText]="searchText" [loggedIn]=loginStatus (IsLoggedIn)="valueChangedHandler($event)" [ID]=userID (accountID)="valueUserID($event)"></app-login>
+        </li>
+      </ul>
+<!--      No account-->
+
+<!--      Accounted-->
+<ul class="navbar-nav ml-auto nav-flex-icons" *ngIf="loginStatus">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+           aria-haspopup="true" aria-expanded="false">
+          <div style="float: left; text-align: right" class="mt-0">
+          <span class="login-link" style="font-size: 14px;">{{userData.login}}<br/>
+            <span class="registration" style="font-size: 9px; display: block">Мой профиль</span></span>
+          </div>
+          <img class="ml-1" style="width: 34px; height: 34px" src="https://i.pinimg.com/originals/bd/fd/4f/bdfd4f6ba74658a2d04c32ef09bb0406.jpg">
+        </a>
+        <div class="dropdown-menu dropdown-menu-right dropdown-default"
+             aria-labelledby="navbarDropdownMenuLink-333" style="width: 200px; left: 0">
+          <ul style="width: 200px; list-style-type: none; padding: 0">
+            <li style="width: 160px"><a style="font-weight: normal; font-size: 13px"><i class="fas fa-angle-right mr-3"></i>Мой профиль</a></li>
+            <li style="width: 160px"><a style="font-weight: normal; font-size: 13px"><i class="fas fa-angle-right mr-3"></i>Сообщения: (0 | 0)</a></li>
+            <li style="width: 160px"><a routerLink="/subscribes" style="font-weight: normal; font-size: 13px"><i class="fas fa-angle-right mr-3"></i>Мои закладки</a></li>
+            <li style="width: 160px"><a style="font-weight: normal; font-size: 13px"><i class="fas fa-angle-right mr-3"></i>Выход</a></li>
+          </ul>
+        </div>
+    </li>
+
+      <!--      Accounted-->
+
+    </ul>
+    </div>
+  </div>
+</nav>
+<div class="container mt-4 mb-5">
+  <div class="" style="float: right; margin-right: 25px;">
+    <ul style="margin-top:27px;">
+      <button class="btn nav-btn">Топ 10 Онлайн игр</button>
+      <button class="btn nav-btn">Топ 100 игр</button>
+      <button class="btn nav-btn">С русcкой озвучкой</button>
+      <a href="https://vk.com/torrent_igruha" ><button class="btn soc-btn">Мы Вконтакте</button></a>
+    </ul>
+  </div>
+  <div class="logo-igruha">
+    <div routerLink="/" style="width: 300px">
+    <img style="width: 55px; position: absolute; display: block; margin-left: 277px" src="https://s1.torrents-igruha.org/pictures/logo_tree.png">
+    <p style="font-size: 13px; display: block; margin: 0 0 0 242px; font-weight: normal">{{logoElement1|uppercase}}</p>
+    <p style="font-size: 34px; margin: -15px 0 0 0; font-weight: normal">{{logoElement2|titlecase}} <span style="color: chartreuse">{{logoElement3|titlecase}}</span></p>
+    <p style="font-size: 13px;margin: 0 0 3px -3px; font-weight: normal">Официальный сайт | Качай сколько влезет ;)</p>
+    </div>
+  </div>
+</div>
+<nav class="mb-1 navbar navbar-expand-lg navbar-dark" style="background-color: #89C80E; min-height: 45px">
+  <div class="container">
+  <i style="background-color: white; padding: 4px 6px; border-radius: 20px" class="fas fa-map-marker-alt"></i>
+    <div class="">
+      <a href="" style="position: absolute; color: #F5F5F5; display: block; margin-left: 210px; margin-top: 6px" class="fas fa-search"></a>
+      <input [(ngModel)]="searchText" data-toggle="dropdown" class="form-control search" type="search" placeholder="Поиск по сайту..." aria-label="Search">
+<!--    SEARCH-->
+      <div class="rounded dropdown-menu"  style="padding: 0; position: absolute; left: 1084px; top: 40px; background-color: white; z-index: 1; border: solid 2px #89C80E">
+        <table class="table mb-0" style="width: 224px; background-color: #F5F5F5">
+          <tbody>
+          <tr *ngFor="let element of games$ | filter:searchText">
+            <td><a href="/product" [routerLink]="['/game-page/'+element.id]" style="font-weight: normal; color: #89C80E; font-size: 18px">{{element.name}}</a></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+<!--      SEARCH-->
+    </div>
+  </div>
+</nav>
+<!--/.Navbar -->

@@ -1,0 +1,24 @@
+.ft {
+  background-color: #292929;
+}
+.ft1 {
+  background-color: #292929;
+}
+.ft2 {
+  background-color: #1E1E1E;
+}
+footer {
+  background-color: #1E1E1E;
+  color: #909090;
+  font-weight: normal;
+  bottom: 0;
+  width: 100%;
+  clear: both;
+  position: relative;
+}
+#up a {
+  color: #909090;
+}
+#up a:hover {
+  color: #F5F5F5;
+}

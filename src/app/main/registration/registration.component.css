@@ -1,0 +1,43 @@
+a {
+  color: #353535;
+  float: right;
+  text-decoration: none
+}
+a:hover {
+  color: #89C80E;
+}
+.btn {
+  margin-top: 8px;
+  background-color: #89C80E;
+  padding: 10px 15px;
+  color: #F5F5F5;
+}
+.btn:hover {
+  background-color: #353535;
+}
+.reg {
+  width: 100%;
+  border: solid 2px rgb(217, 217, 217);
+}
+#check {
+  font-size: 13px;
+  padding: 3px 12px;
+  text-transform: unset !important;
+  background-color: transparent;
+  color: #353535;
+  border: solid 2px #353535;
+}
+#check:hover {
+  border: solid 2px #89C80E;
+  color: #89C80E;
+}
+.error {
+  font-size: 14px;
+  color: red;
+}
+input.ng-invalid {
+  border-left: 4px solid red;
+}
+input.ng-valid {
+  border-left: 4px solid green;
+}

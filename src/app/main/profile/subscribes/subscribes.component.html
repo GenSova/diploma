@@ -1,0 +1,7 @@
+<div *ngFor="let element of subscribes$; let i = index" class="" style="width: 165px; float: left; margin-right: 30px; margin-top: 10px">
+  <a [routerLink]="['/game-page/'+element.id]" onclick="$('html, body').animate({scrollTop:0},400)"><img class="card-img-top rounded" style="width: 165px; height: 234px" src="{{element.image}}" alt="Card image cap">
+  </a>
+  <div class="" style="text-align: center">
+    <a [routerLink]="['/game-page/'+element.id]" onclick="$('html, body').animate({scrollTop:0},400)" class="btn btn-link p-0 m-3">{{element.name}}</a><br>
+  </div>
+</div>
