@@ -10,6 +10,7 @@ import { OnChanges, SimpleChanges } from '@angular/core';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
+
 export class LoginComponent implements OnInit {
   @Input() searchText: string;
   @Input() loggedIn: boolean;

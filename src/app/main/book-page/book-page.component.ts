@@ -1,38 +1,38 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {DataService} from '../../data.service';
-import { Game } from '../../models/game.model';
+import { Book } from '../../models/book.model';
 import { Params } from '@angular/router';
 
 @Component({
   selector: 'app-game-page',
-  templateUrl: './game-page.component.html',
-  styleUrls: ['./game-page.component.css']
+  templateUrl: './book-page.component.html',
+  styleUrls: ['./book-page.component.css']
 })
-export class GamePageComponent implements OnInit {
-  games$: Game[];
+export class BookPageComponent implements OnInit {
+  books$: Book[];
   id = this.route.snapshot.params['id'];
-  gameInfo: any;
+  bookInfo: any;
   searchValue: any;
   constructor(private route: ActivatedRoute, private dataService: DataService) { }
 
   ngOnInit(): void {
-    this.dataService.getGames()
-      .subscribe(data => this.games$ = data);
-    this.dataService.getGamesInfo(this.id)
-      .subscribe(data => this.gameInfo = data);
-    console.log(this.gameInfo);
+    this.dataService.getBooks()
+      .subscribe(data => this.books$ = data);
+    this.dataService.getBooksInfo(this.id)
+      .subscribe(data => this.bookInfo = data);
+    console.log(this.bookInfo);
     this.route.params.subscribe((params: Params) => {
       this.searchValue = params['id'];
       this.dataService
-        .getGamesInfo(this.searchValue)
-        .subscribe(gameinfo => {
-          this.gameInfo = gameinfo;
+        .getBooksInfo(this.searchValue)
+        .subscribe(bookinfo => {
+          this.bookInfo = bookinfo;
         });
     });
   }
   addSubs(){
-      this.dataService.addFav(this.gameInfo).subscribe(result => {
+      this.dataService.addFav(this.bookInfo).subscribe(result => {
         alert('Добавлено');
       });
     }

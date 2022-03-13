@@ -1,9 +1,9 @@
-a {
+.back {
   color: #353535;
   float: right;
   text-decoration: none
 }
-a:hover {
+.back:hover {
   color: #89C80E;
 }
 .btn {

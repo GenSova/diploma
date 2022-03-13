@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DataService } from '../data.service';
 import { Category } from '../models/category.model';
-import {Game} from '../models/game.model';
 
 @Component({
   selector: 'app-categories-list',

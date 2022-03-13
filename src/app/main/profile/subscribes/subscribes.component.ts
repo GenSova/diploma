@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {DataService} from '../../../data.service';
-import {Game} from '../../../models/game.model';
+import {Book} from '../../../models/book.model';
 
 @Component({
   selector: 'app-subscribes',
@@ -9,7 +9,7 @@ import {Game} from '../../../models/game.model';
   styleUrls: ['./subscribes.component.css']
 })
 export class SubscribesComponent implements OnInit {
-  subscribes$: Game[];
+  subscribes$: Book[];
   constructor(private route: ActivatedRoute, private dataService: DataService) { }
 
   ngOnInit(): void {

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Game } from '../../../models/game.model';
+import { Book } from '../../../models/book.model';
 import { ActivatedRoute } from '@angular/router';
 import { DataService } from '../../../data.service';
 import { OnDestroy } from '@angular/core';
@@ -10,12 +10,12 @@ import { OnDestroy } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
-  games$: Game[];
+  books$: Book[];
   constructor(private route: ActivatedRoute, private dataService: DataService) { }
 
   ngOnInit(): void {
-    this.dataService.getGames()
-      .subscribe(data => this.games$ = data);
+    this.dataService.getBooks()
+      .subscribe(data => this.books$ = data);
   }
   ngOnDestroy() {
     console.log('Вы покинули главную страницу');

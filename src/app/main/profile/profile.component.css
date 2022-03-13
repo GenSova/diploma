@@ -1,0 +1,17 @@
+.avatar {
+  height: 170px;
+  width: 150px;
+}
+.username {
+  font-size: 40px;
+}
+.user-info {
+  font-weight: normal;
+}
+.user-func {
+  background-color: #89C80E;
+  color: white;
+}
+.user-func:hover {
+  background-color: rgb(228, 160, 24);
+}

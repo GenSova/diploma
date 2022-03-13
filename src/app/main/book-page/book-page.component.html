@@ -1,0 +1,73 @@
+<div class="container mt-2" style="font-weight: normal; font-size: 15px">
+  <div class="" style="float: left;">
+    <a routerLink="/" class="module-title-articles back">На главную <i class="fas fa-chevron-circle-right fa-lg"></i></a>
+    <div class="mb-2">
+      <div class="title mb-4" >
+        <h3 class="mb-3" style="font-size: 21px; font-weight: bolder">{{bookInfo.name}}</h3>
+        <p style="font-size: 14px; color: #797979">Комментариев: <span class="activity">614</span> / Просмотров: <span class="activity">3138491</span></p>
+      </div>
+<!--      &#45;&#45;&#45;&#45;-->
+      <div style="float: left; width: 200px; ">
+        <div id="article-film-full-poster-bg">
+          <img src="{{bookInfo.image}}" style="width: 200px; height: 286px" alt="Fortnite Battle Royale" title="Fortnite Battle Royale" class="article-img-full entry-image">
+        </div>
+        <div id="news-id-274"></div>
+        <table class="ignore-select" width="100%" style="margin-bottom:0px; background:#e1e4e9; border-radius:0px;">
+          <tbody>
+          <tr>
+            <td style="padding-top:8px; padding-bottom:8px;">
+            </td>
+            <td width="230px" align="center"><br>
+              <a (click)="addSubs()" id="news_subscribe" class="link-subscribe" title="Подписаться на обновления">Подписаться на обновления</a><br>
+              <div style="padding-top: 10px;">Подписалось: <b style="color:red; " id="count">2719</b></div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+<!--      &#45;&#45;&#45;&#45;-->
+<!--      bookinfo-->
+      <div style="padding-left: 215px; margin-bottom: 23%">
+        Год издания: {{bookInfo.year}}<br>
+        Город издания: {{bookInfo.city}} <br>
+        Жанр: {{bookInfo.category}}<br>
+        Автор книги: {{bookInfo.author}} <br>
+        Переводчик: {{bookInfo.translater}}<br>
+        Издательство: {{bookInfo.publisher}}<br>
+        Возрастные ограничения: {{bookInfo.age}}<br>
+        Язык: <b>{{bookInfo.language}}</b><br>
+        Язык оригинала: <b>{{bookInfo.original}}</b><br>
+        ISBN: {{bookInfo.isbn}}<br>
+
+        <div class="exampleone">
+
+        </div>
+      </div>
+<!--      bookinfo-->
+    </div>
+    <div class="description mt-4">
+      <div class="mb-2" style="font-size: 18px; font-weight: normal; color: #89C80E">Описание книги:</div>
+      {{bookInfo.about}}<br/><br/>
+      <br><br>
+
+    <div class="recommendation">
+      <div class="mb-2"  style="font-size: 18.6px; font-weight: normal;">Также рекомендуем похожие книги:</div>
+      <div class="row">
+        <div *ngFor="let element of books$.slice(0, 8); let i = index;" class="col-sm-3">
+          <div  class="h-100" style="width: 165px; float: left; margin-right: 20px; margin-top: 10px">
+            <a [routerLink]="['/book-page/'+element.id]" onclick="$('html, body').animate({scrollTop:0},400)" ><img class="card-img-top rounded" style="width: 165px; height: 234px" src="{{element.image}}" alt="Card image cap">
+            </a>
+            <div class="" style="text-align: center">
+              <a [routerLink]="['/book-page/'+element.id]" onclick="$('html, body').animate({scrollTop:0},400)" class="btn btn-link p-0 m-3">{{element.name}}</a><br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="float-left text-center" style="margin: 30px 0 30px 25px">
+        <a routerLink="/faq" onclick="$('html, body').animate({scrollTop:0},400)" style="color: #353535; border: solid 2px red; padding: 8px 150px">FAQ по проблемам с установкой/запуском репаков</a>
+      </div>
+    </div>
+  </div>
+<app-comments></app-comments>
+</div>

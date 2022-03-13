@@ -1,31 +1,22 @@
-.game-image {
-  width: 330px;
-  height: 250px;
-}
-
 .column {
   padding: 5px;
   float: left;
 }
-a.link-subscribe, a.link-subscribe:hover {
-  background: green;
-  border-color: green;
+.link-subscribe {
 
 }
-a.link-unsubscribe, a.link-unsubscribe:hover {
-  background: red;
-  border-color: red;
-}
-a.link-subscribe, a.link-unsubscribe {
+#news_subscribe {
+  color: #F5F5F5;
   background: #DE5C02;
   font-size: 13px;
   border: 4px solid #DE5C02;
   border-radius: 4px;
   transition: 0.1s;
-
   padding: 2px 2px;
-  text-decoration: none;
-  color: #eee;
+}
+#news_subscribe:hover {
+  background: green;
+  border-color: green;
 }
 .download-btn {
   background-color: rgb(61, 215, 61);
@@ -38,8 +29,18 @@ a.link-subscribe, a.link-unsubscribe {
   background-color: #FF8027;
 }
 .i-am-centered {
-  margin: auto; max-width: 595px;
+  margin: auto;
+  max-width: 595px;
 }
 .activity {
   color: #353535;
 }
+.back {
+  color: #353535;
+  float: right;
+  text-decoration: none
+}
+.back:hover {
+  color: #89C80E;
+}
+

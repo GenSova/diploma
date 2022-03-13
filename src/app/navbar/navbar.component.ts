@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Game } from '../models/game.model';
-import {ActivatedRoute, Router} from '@angular/router';
-import {DataService} from '../data.service';
+import { Book } from '../models/book.model';
+import { ActivatedRoute, Router } from '@angular/router';
+import { DataService } from '../data.service';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import { OnChanges, SimpleChanges } from '@angular/core';
 
@@ -13,13 +13,11 @@ import { OnChanges, SimpleChanges } from '@angular/core';
 export class NavbarComponent implements OnInit {
   a = 0;
   searchText;
-  games$: Game[];
-  logoElement1 = "org";
-  logoElement2 = "торрент";
-  logoElement3 = "игруха";
+  games$: Book[];
   loginStatus = false;
   userID: number;
   userData: any;
+  globalID: number;
   constructor(private route: ActivatedRoute, public dataService: DataService, private router: Router) { }
   valueChangedHandler(status: boolean) {
     this.a = 1;
@@ -33,7 +31,7 @@ export class NavbarComponent implements OnInit {
       .subscribe(data => this.userData = data);
   }
   ngOnInit(): void {
-    this.dataService.getGames()
+    this.dataService.getBooks()
       .subscribe(data => this.games$ = data);
   }
 }

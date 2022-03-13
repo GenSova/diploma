@@ -11,13 +11,13 @@
         <div class="vertical"></div>
       </li>
       <li class="nav-item">
-        <a routerLink="/" class="nav-link">Новые игры</a>
+        <a routerLink="/" class="nav-link">Новые книги</a>
       </li>
       <li class="nav-item">
         <div class="vertical"></div>
       </li>
       <li class="nav-item">
-        <a routerLink="/" class="nav-link">Игры 2020 года</a>
+        <a routerLink="/" class="nav-link">Топ книг 2020 года</a>
       </li>
       <li class="nav-item">
         <div class="vertical"></div>
@@ -36,6 +36,12 @@
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link" routerLink="/faq">Решение проблем (FAQ)</a>
+      </li>
+      <li class="nav-item">
+        <div class="vertical"></div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" routerLink="/about">О нас</a>
       </li>
       <li class="nav-item">
         <div class="vertical"></div>
@@ -73,7 +79,7 @@
         <div class="dropdown-menu dropdown-menu-right dropdown-default"
              aria-labelledby="navbarDropdownMenuLink-333" style="width: 200px; left: 0">
           <ul style="width: 200px; list-style-type: none; padding: 0">
-            <li style="width: 160px"><a style="font-weight: normal; font-size: 13px"><i class="fas fa-angle-right mr-3"></i>Мой профиль</a></li>
+            <li style="width: 160px"><a style="font-weight: normal; font-size: 13px" routerLink="/profile"><i class="fas fa-angle-right mr-3"></i>Мой профиль</a></li>
             <li style="width: 160px"><a style="font-weight: normal; font-size: 13px"><i class="fas fa-angle-right mr-3"></i>Сообщения: (0 | 0)</a></li>
             <li style="width: 160px"><a routerLink="/subscribes" style="font-weight: normal; font-size: 13px"><i class="fas fa-angle-right mr-3"></i>Мои закладки</a></li>
             <li style="width: 160px"><a style="font-weight: normal; font-size: 13px"><i class="fas fa-angle-right mr-3"></i>Выход</a></li>
@@ -87,27 +93,25 @@
     </div>
   </div>
 </nav>
-<div class="container mt-4 mb-5">
+<div class="container mt-2 mb-3">
   <div class="" style="float: right; margin-right: 25px;">
     <ul style="margin-top:27px;">
-      <button class="btn nav-btn">Топ 10 Онлайн игр</button>
-      <button class="btn nav-btn">Топ 100 игр</button>
-      <button class="btn nav-btn">С русcкой озвучкой</button>
+      <button class="btn nav-btn">Топ 10 читаемых книг мира</button>
+      <button class="btn nav-btn">Топ 100 книг</button>
+      <button class="btn nav-btn">Топ отечественных книг</button>
       <a href="https://vk.com/torrent_igruha" ><button class="btn soc-btn">Мы Вконтакте</button></a>
     </ul>
   </div>
   <div class="logo-igruha">
     <div routerLink="/" style="width: 300px">
-    <img style="width: 55px; position: absolute; display: block; margin-left: 277px" src="https://s1.torrents-igruha.org/pictures/logo_tree.png">
-    <p style="font-size: 13px; display: block; margin: 0 0 0 242px; font-weight: normal">{{logoElement1|uppercase}}</p>
-    <p style="font-size: 34px; margin: -15px 0 0 0; font-weight: normal">{{logoElement2|titlecase}} <span style="color: chartreuse">{{logoElement3|titlecase}}</span></p>
-    <p style="font-size: 13px;margin: 0 0 3px -3px; font-weight: normal">Официальный сайт | Качай сколько влезет ;)</p>
+    <img style="width: 105px; display: block; margin-left: 20%" src="assets/logo.png">
+      <!-- <p style="font-size: 34px; margin: -15px 0 0 0; font-weight: normal"></p> -->
     </div>
   </div>
 </div>
 <nav class="mb-1 navbar navbar-expand-lg navbar-dark" style="background-color: #89C80E; min-height: 45px">
   <div class="container">
-  <i style="background-color: white; padding: 4px 6px; border-radius: 20px" class="fas fa-map-marker-alt"></i>
+  <i routerLink="/map" style="background-color: white; padding: 4px 6px; border-radius: 20px; text-decoration: none" class="fas fa-map-marker-alt"></i>
     <div class="">
       <a href="" style="position: absolute; color: #F5F5F5; display: block; margin-left: 210px; margin-top: 6px" class="fas fa-search"></a>
       <input [(ngModel)]="searchText" data-toggle="dropdown" class="form-control search" type="search" placeholder="Поиск по сайту..." aria-label="Search">
@@ -116,7 +120,7 @@
         <table class="table mb-0" style="width: 224px; background-color: #F5F5F5">
           <tbody>
           <tr *ngFor="let element of games$ | filter:searchText">
-            <td><a href="/product" [routerLink]="['/game-page/'+element.id]" style="font-weight: normal; color: #89C80E; font-size: 18px">{{element.name}}</a></td>
+            <td><a href="/product" [routerLink]="['/book-page/'+element.id]" style="font-weight: normal; color: #89C80E; font-size: 18px">{{element.name}}</a></td>
           </tr>
           </tbody>
         </table>

@@ -29,10 +29,10 @@ nav {
 .login-el {
   border: solid 2px rgb(217, 217, 217);
 }
-a {
+a.nav-link {
   color: #909090;
 }
-a:hover {
+a.nav-link:hover {
   color: #F5F5F5;
 }
 .login-link {

@@ -6,9 +6,12 @@ import {DisclaimerComponent} from './main/disclaimer/disclaimer.component';
 import {FaqComponent} from './main/faq/faq.component';
 import {RecoverComponent} from './main/recover/recover.component';
 import {RegistrationComponent} from './main/registration/registration.component';
-import {GamePageComponent} from './main/game-page/game-page.component';
+import {BookPageComponent} from './main/book-page/book-page.component';
 import {DeactivateGuard} from './guards/deactivate.guard';
 import {SubscribesComponent} from './main/profile/subscribes/subscribes.component';
+import {ProfileComponent} from './main/profile/profile.component';
+import {AboutComponent} from './main/about/about.component';
+import {MapComponent} from './main/map/map.component';
 
 const routes: Routes = [
   {
@@ -38,13 +41,25 @@ const routes: Routes = [
     canDeactivate: [DeactivateGuard]
   },
   {
-    path: 'game-page/:id',
-    component: GamePageComponent
+    path: 'book-page/:id',
+    component: BookPageComponent
   },
   {
     path: 'subscribes',
     component: SubscribesComponent
   },
+  {
+    path: 'profile',
+    component: ProfileComponent
+  },
+  {
+    path: 'about',
+    component: AboutComponent
+  },
+  {
+    path: 'map',
+    component: MapComponent
+  }
 ];
 
 @NgModule({
