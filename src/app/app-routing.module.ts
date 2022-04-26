@@ -12,6 +12,10 @@ import {SubscribesComponent} from './main/profile/subscribes/subscribes.componen
 import {ProfileComponent} from './main/profile/profile.component';
 import {AboutComponent} from './main/about/about.component';
 import {MapComponent} from './main/map/map.component';
+import {DesiredComponent} from './main/profile/desired/desired.component';
+import {StockComponent} from './main/profile/stock/stock.component';
+import {UnwantedComponent} from './main/profile/unwanted/unwanted.component';
+import {FilteredCategoryComponent} from './main/filtered-category/filtered-category.component';
 
 const routes: Routes = [
   {
@@ -49,6 +53,18 @@ const routes: Routes = [
     component: SubscribesComponent
   },
   {
+    path: 'desired',
+    component: DesiredComponent
+  },
+  {
+    path: 'stock',
+    component: StockComponent
+  },
+  {
+    path: 'unwanted',
+    component: UnwantedComponent
+  },
+  {
     path: 'profile',
     component: ProfileComponent
   },
@@ -59,6 +75,10 @@ const routes: Routes = [
   {
     path: 'map',
     component: MapComponent
+  },
+  {
+    path: 'filtered-category/:categoryName',
+    component: FilteredCategoryComponent
   }
 ];
 

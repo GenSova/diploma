@@ -25,6 +25,11 @@ import { LoginComponent } from './navbar/login/login.component';
 import { SubscribesComponent } from './main/profile/subscribes/subscribes.component';
 import { ProfileComponent } from './main/profile/profile.component';
 import { MapComponent } from './main/map/map.component';
+import { DesiredComponent } from './main/profile/desired/desired.component';
+import { StockComponent } from './main/profile/stock/stock.component';
+import { UnwantedComponent } from './main/profile/unwanted/unwanted.component';
+import { Globals } from './globals';
+import { FilteredCategoryComponent } from './main/filtered-category/filtered-category.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +51,10 @@ import { MapComponent } from './main/map/map.component';
     SubscribesComponent,
     ProfileComponent,
     MapComponent,
+    DesiredComponent,
+    StockComponent,
+    UnwantedComponent,
+    FilteredCategoryComponent,
   ],
   imports: [
     BrowserModule,

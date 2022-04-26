@@ -36,4 +36,19 @@ export class BookPageComponent implements OnInit {
         alert('Добавлено');
       });
     }
+  addDesired(){
+    this.dataService.addDesiredd(this.bookInfo).subscribe(result => {
+      alert('Добавлено');
+    });
+  }
+  addStock(){
+    this.dataService.addStockk(this.bookInfo).subscribe(result => {
+      alert('Добавлено');
+    });
+  }
+  addUnwanted(){
+    this.dataService.addUnwantedd(this.bookInfo).subscribe(result => {
+      alert('Добавлено');
+    });
+  }
 }

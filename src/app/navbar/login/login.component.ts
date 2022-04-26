@@ -4,6 +4,7 @@ import {ActivatedRoute, Router} from '@angular/router';
 import { Output, Input } from '@angular/core';
 import { EventEmitter } from '@angular/core';
 import { OnChanges, SimpleChanges } from '@angular/core';
+import {Globals} from '../../globals';
 
 @Component({
   selector: 'app-login',
@@ -24,7 +25,7 @@ export class LoginComponent implements OnInit {
   loginValue: string;
   passwordValue: string;
   reg: boolean;
-  constructor(private dataService: DataService, private route: ActivatedRoute, private router: Router) { }
+  constructor(private globalVars: Globals, private dataService: DataService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     this.dataService.getUsers()
@@ -41,6 +42,7 @@ export class LoginComponent implements OnInit {
         this.IsLoggedIn.emit(this.loggedIn);
         this.accountID.emit(this.ID);
         this.router.navigate(['']);
+        this.globalVars.globalID = this.user.id;
         alert("Рады вас видеть " + this.user.login + " :)");
       }else {
         alert("Ой, что-то пошло не так :(");

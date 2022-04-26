@@ -5,7 +5,7 @@
 .link-subscribe {
 
 }
-#news_subscribe {
+.news_subscribe {
   color: #F5F5F5;
   background: #DE5C02;
   font-size: 13px;
@@ -14,7 +14,7 @@
   transition: 0.1s;
   padding: 2px 2px;
 }
-#news_subscribe:hover {
+.news_subscribe:hover {
   background: green;
   border-color: green;
 }
@@ -42,5 +42,15 @@
 }
 .back:hover {
   color: #89C80E;
+}
+.dropdown-menu {
+  background-color: transparent;
+  border-color: transparent;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+.dropdown-toggle {
+  margin: 0;
 }
 

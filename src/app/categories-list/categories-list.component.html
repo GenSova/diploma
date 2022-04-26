@@ -3,7 +3,7 @@
   <div style=" margin-top: 25px;">
     <ul class="">
       <li *ngFor="let element of categories$; let i = index">
-        <a style="width: 230px" routerLink="/" type="button" class="btn rounded">{{element.name}}</a>
+        <a style="width: 230px" [routerLink]="['/filtered-category/'+element.name]" type="button" class="btn rounded">{{element.name}}</a>
       </li>
     </ul>
   </div>

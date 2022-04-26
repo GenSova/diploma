@@ -4,6 +4,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { DataService } from '../data.service';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import { OnChanges, SimpleChanges } from '@angular/core';
+import {Account} from '../models/account.model';
 
 @Component({
   selector: 'app-navbar',
@@ -16,7 +17,7 @@ export class NavbarComponent implements OnInit {
   games$: Book[];
   loginStatus = false;
   userID: number;
-  userData: any;
+  userData: Account[];
   globalID: number;
   constructor(private route: ActivatedRoute, public dataService: DataService, private router: Router) { }
   valueChangedHandler(status: boolean) {
@@ -29,6 +30,9 @@ export class NavbarComponent implements OnInit {
     console.log("Users id: " + this.userID);
     this.dataService.getUsersData(this.userID)
       .subscribe(data => this.userData = data);
+  }
+  logOut(){
+    this.loginStatus = false;
   }
   ngOnInit(): void {
     this.dataService.getBooks()

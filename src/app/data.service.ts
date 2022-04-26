@@ -15,10 +15,16 @@ export class DataService {
   bookInfoApi = 'http://localhost:3000/bookInfo/';
   usersApi = 'http://localhost:3000/accounts/';
   subscribesApi = 'http://localhost:3000/subscribes/';
+  desiredApi = 'http://localhost:3000/desired/';
+  stockApi = 'http://localhost:3000/stock/';
+  unwantedApi = 'http://localhost:3000/unwanted/';
   commentsApi = 'http://localhost:3000/comments/';
   constructor(private http: HttpClient) {}
   getBooks() {
     return this.http.get<Book[]>(this.bookInfoApi);
+  }
+  getBooksFull() {
+    return this.http.get<BookInfo[]>(this.bookInfoApi);
   }
   getCategories() {
     return this.http.get<Category[]>(this.categoriesApi);
@@ -38,8 +44,26 @@ export class DataService {
   getSubscribes() {
     return this.http.get<Book[]>(this.subscribesApi);
   }
+  getDesired() {
+    return this.http.get<Book[]>(this.desiredApi);
+  }
+  getStock() {
+    return this.http.get<Book[]>(this.stockApi);
+  }
+  getUnwanted() {
+    return this.http.get<Book[]>(this.unwantedApi);
+  }
   addFav(data): Observable<any>{
     return this.http.post('http://localhost:3000/subscribes/', data);
+  }
+  addDesiredd(data): Observable<any>{
+    return this.http.post('http://localhost:3000/desired/', data);
+  }
+  addStockk(data): Observable<any>{
+    return this.http.post('http://localhost:3000/stock/', data);
+  }
+  addUnwantedd(data): Observable<any>{
+    return this.http.post('http://localhost:3000/unwanted/', data);
   }
   getComments() {
     return this.http.get<Comment[]>(this.commentsApi);

@@ -1,0 +1,13 @@
+<div class="row" *ngIf="show">
+  <div *ngFor="let book of books$; let i = index"  class="col-sm-3">
+<!--    <ng-container *ngIf="isMatches(book)">-->
+    <div class="h-100" style="width: 165px; float: left; margin-right: 30px; margin-top: 10px">
+      <a [routerLink]="['/book-page/'+book.id]" onclick="$('html, body').animate({scrollTop:0},400)"><img class="card-img-top rounded" style="width: 165px; height: 234px" src="{{book.image}}" alt="Card image cap">
+      </a>
+      <div class="" style="text-align: center">
+        <a [routerLink]="['/book-page/'+book.id]" onclick="$('html, body').animate({scrollTop:0},400)" class="btn btn-link p-0 m-3">{{book.name}}</a><br>
+      </div>
+    </div>
+<!--    </ng-container>-->
+  </div>
+</div>
