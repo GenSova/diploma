@@ -30,6 +30,8 @@ import { StockComponent } from './main/profile/stock/stock.component';
 import { UnwantedComponent } from './main/profile/unwanted/unwanted.component';
 import { Globals } from './globals';
 import { FilteredCategoryComponent } from './main/filtered-category/filtered-category.component';
+import { DonationComponent } from './main/donation/donation.component';
+import { NgPaymentCardModule } from 'ng-payment-card';
 
 @NgModule({
   declarations: [
@@ -55,6 +57,7 @@ import { FilteredCategoryComponent } from './main/filtered-category/filtered-cat
     StockComponent,
     UnwantedComponent,
     FilteredCategoryComponent,
+    DonationComponent,
   ],
   imports: [
     BrowserModule,
@@ -62,7 +65,8 @@ import { FilteredCategoryComponent } from './main/filtered-category/filtered-cat
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    Ng2SearchPipeModule
+    Ng2SearchPipeModule,
+    NgPaymentCardModule
   ],
   providers: [DataService, DeactivateGuard],
   bootstrap: [AppComponent]

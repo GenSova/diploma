@@ -53,6 +53,12 @@ a.nav-link:hover {
 .nav-btn:hover {
   background-color: rgb(228, 160, 24);
 }
+.donation-button {
+  background-color: red;
+}
+.donation-button:hover {
+  background-color: cornflowerblue;
+}
 .soc-btn {
   background-color: rgb(14, 172, 221);
 }

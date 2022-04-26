@@ -37,9 +37,9 @@
 <!--      <li class="nav-item dropdown">-->
 <!--        <a class="nav-link" routerLink="/faq">Решение проблем (FAQ)</a>-->
 <!--      </li>-->
-      <li class="nav-item">
-        <div class="vertical"></div>
-      </li>
+<!--      <li class="nav-item">-->
+<!--        <div class="vertical"></div>-->
+<!--      </li>-->
       <li class="nav-item dropdown">
         <a class="nav-link" routerLink="/about">О нас</a>
       </li>
@@ -57,7 +57,7 @@
           <span class="login-link" style="font-size: 14px;">Войти<br/>
             <span class="registration" style="font-size: 9px; display: block">Регистрация</span></span>
             </div>
-            <img class="ml-1" style="width: 34px; height: 34px" src="https://s1.torrents-igruha.org/templates/gamestorgreen/dleimages/noavatar.png">
+            <img class="ml-1" style="width: 34px; height: 34px" src="assets/noavatar.png">
           </a>
 
         <app-login [searchText]="searchText" [loggedIn]=loginStatus (IsLoggedIn)="valueChangedHandler($event)" [ID]=userID (accountID)="valueUserID($event)"></app-login>
@@ -74,7 +74,7 @@
           <span class="login-link" style="font-size: 14px;">{{userData.login}}<br/>
             <span class="registration" style="font-size: 9px; display: block">Мой профиль</span></span>
           </div>
-          <img class="ml-1" style="width: 34px; height: 34px" src="https://i.pinimg.com/originals/bd/fd/4f/bdfd4f6ba74658a2d04c32ef09bb0406.jpg">
+          <img class="ml-1" style="width: 34px; height: 34px" src="assets/avatar.png">
         </a>
         <div class="dropdown-menu dropdown-menu-right dropdown-default"
              aria-labelledby="navbarDropdownMenuLink-333" style="width: 200px; left: 0">
@@ -96,7 +96,7 @@
 <div class="container mt-2 mb-3">
   <div class="" style="float: right; margin-right: 25px;">
     <ul style="margin-top:27px;">
-      <button class="btn nav-btn">Топ 10 читаемых книг мира</button>
+      <button routerLink="/donation" class="btn nav-btn donation-button">Поддержать проект</button>
       <button class="btn nav-btn">Топ 100 книг</button>
       <button class="btn nav-btn">Топ отечественных книг</button>
       <a href="https://vk.com/bookcrossing_kaz" ><button class="btn soc-btn">Мы Вконтакте</button></a>

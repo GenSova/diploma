@@ -1,3 +1,7 @@
+<div class="module-title mb-3 mt-2">
+  <a routerLink="/" class="module-title-articles back">На главную <i class="fas fa-chevron-circle-right fa-lg"></i></a>
+  <span style="font-size: 21px;">Книги в жанре {{name}}</span>
+</div>
 <div class="row" *ngIf="show">
   <div *ngFor="let book of books$; let i = index"  class="col-sm-3">
 <!--    <ng-container *ngIf="isMatches(book)">-->

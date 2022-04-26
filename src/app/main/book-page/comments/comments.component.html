@@ -6,7 +6,7 @@
       <div class="card-body">
         <div class="form-group " *ngFor="let comment of comments$">
           <small class="float-right" style="font-weight: normal">{{today | date}}</small>
-          <img class="float-left mr-2" style="width: 70px; height: 70px" src="https://s1.torrents-igruha.org/templates/gamestorgreen/dleimages/noavatar.png">
+          <img class="float-left mr-2" style="width: 70px; height: 70px" src="assets/noavatar.png">
           <strong for="replyFormComment">{{comment.name}}</strong><br><br>
           <label for="replyFormName">{{"> "+comment.message}}</label>
           <hr>

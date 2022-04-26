@@ -16,6 +16,7 @@ import {DesiredComponent} from './main/profile/desired/desired.component';
 import {StockComponent} from './main/profile/stock/stock.component';
 import {UnwantedComponent} from './main/profile/unwanted/unwanted.component';
 import {FilteredCategoryComponent} from './main/filtered-category/filtered-category.component';
+import {DonationComponent} from './main/donation/donation.component';
 
 const routes: Routes = [
   {
@@ -79,6 +80,10 @@ const routes: Routes = [
   {
     path: 'filtered-category/:categoryName',
     component: FilteredCategoryComponent
+  },
+  {
+    path: 'donation',
+    component: DonationComponent
   }
 ];
 
