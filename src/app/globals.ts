@@ -5,5 +5,5 @@ import {Injectable} from '@angular/core';
 })
 export class Globals {
   public globalID: number;
-  public globalCategoryName: string;
+  public stockUserID: number;
 }

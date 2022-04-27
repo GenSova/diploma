@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
-import { ActivatedRoute } from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import { DataService } from '../../data.service';
 
 @Component({
@@ -10,7 +10,7 @@ import { DataService } from '../../data.service';
 })
 export class RegistrationComponent implements OnInit {
   formGroup: FormGroup;
-  constructor(private authService: DataService, private route: ActivatedRoute) { }
+  constructor(private authService: DataService, private router: Router) { }
 
   ngOnInit(): void {
     this.initForm();
@@ -27,6 +27,10 @@ export class RegistrationComponent implements OnInit {
     if (this.formGroup.valid) {
       this.authService.login(this.formGroup.value).subscribe(result => {
         alert('Вы успешно зарегистрировались :)');
+        this.router.navigate(['/'])
+          .then(() => {
+            window.location.reload();
+          });
       });
     }
   }

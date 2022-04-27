@@ -58,9 +58,33 @@
     <div class="description mt-4">
       <div class="mb-2" style="font-size: 18px; font-weight: normal; color: #89C80E">Описание книги:</div>
       {{bookInfo.about}}<br/><br/>
-      <br><br>
+      <br>
 
-    <div class="recommendation">
+      <div class="description mt-4 mb-5">
+        <div class="mb-2" style="font-size: 18px; font-weight: normal; color: #89C80E">Пользователи у которых есть данная книга:</div>
+        <div>
+          <div *ngFor="let user of usersData.slice(0, 3)" class="card text-center float-left mr-4 mb-5" style="width: 12rem;">
+            <img class="list-image mx-auto" src="{{user.avatar}}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="">{{user.login}}</h5>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle news_subscribe" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Контакты
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item news_subscribe disabled">Номер: +7 777 770 70 70</a>
+                  <a class="dropdown-item news_subscribe disabled">Почта: kikko@gmail.com</a>
+                  <a class="dropdown-item news_subscribe disabled">Город: Алматы</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <br/><br/>
+        <br><br>
+
+    <div class="recommendation float-left">
       <div class="mb-2"  style="font-size: 18.6px; font-weight: normal;">Также рекомендуем похожие книги:</div>
       <div class="row">
         <div *ngFor="let element of books$.slice(0, 8); let i = index;" class="col-sm-3">

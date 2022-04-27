@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
   @Output() accountID: EventEmitter<any> = new EventEmitter<any>();
   User: any = [];
   user: any;
-  email = '';
+  login = '';
   password = '';
   loginValue: string;
   passwordValue: string;
@@ -32,10 +32,10 @@ export class LoginComponent implements OnInit {
       .subscribe(data => this.User = data);
   }
   loginProcess(value: any){
-    this.email = this.loginValue;
+    this.login = this.loginValue;
     this.password = this.passwordValue;
-    if (this.User.find(x => x.email === this.email)){
-      this.user = this.User.find(x => x.email === this.email);
+    if (this.User.find(x => x.login === this.login)){
+      this.user = this.User.find(x => x.login === this.login);
       if (this.user.password === this.password){
         this.loggedIn = true;
         this.ID = this.user.id;

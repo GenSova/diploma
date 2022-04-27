@@ -4,4 +4,6 @@ export class Account {
   password: string;
   password1: string;
   login: string;
+  stock: any;
+  avatar: string;
 }

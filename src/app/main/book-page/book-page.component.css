@@ -53,4 +53,11 @@
 .dropdown-toggle {
   margin: 0;
 }
-
+.list-image {
+  width: 10rem;
+  height: 10rem;
+}
+.list-button {
+  background-color: #89C80E;
+  color: white;
+}

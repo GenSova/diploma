@@ -3,6 +3,7 @@ import {ActivatedRoute} from '@angular/router';
 import {DataService} from '../../data.service';
 import { Book } from '../../models/book.model';
 import { Params } from '@angular/router';
+import {Account} from '../../models/account.model';
 
 @Component({
   selector: 'app-game-page',
@@ -14,6 +15,7 @@ export class BookPageComponent implements OnInit {
   id = this.route.snapshot.params['id'];
   bookInfo: any;
   searchValue: any;
+  usersData: Account[];
   constructor(private route: ActivatedRoute, private dataService: DataService) { }
 
   ngOnInit(): void {
@@ -21,6 +23,8 @@ export class BookPageComponent implements OnInit {
       .subscribe(data => this.books$ = data);
     this.dataService.getBooksInfo(this.id)
       .subscribe(data => this.bookInfo = data);
+    this.dataService.getUsers()
+      .subscribe(data => this.usersData = data);
     console.log(this.bookInfo);
     this.route.params.subscribe((params: Params) => {
       this.searchValue = params['id'];

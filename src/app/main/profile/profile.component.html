@@ -1,6 +1,7 @@
 <div class="mt-2 mb-4">
   <div class="profile-img float-left mr-5">
-    <img class="avatar" src="assets/avatar.png">
+    <img *ngIf="loginStatus === false" class="avatar" src="assets/avatar.png">
+    <img *ngIf="loginStatus === true" class="avatar" src="{{userData.avatar}}">
   </div>
   <div class="user-info">
     <b *ngIf="loginStatus === false" style="margin-left: 6px" class="username"></b><br>
