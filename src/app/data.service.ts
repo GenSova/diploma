@@ -6,20 +6,24 @@ import { Category } from './models/category.model';
 import { BookInfo } from './models/bookinfo.model';
 import { Account } from './models/account.model';
 import { Comment } from './models/comments.model';
+import {Router} from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
   categoriesApi = 'http://localhost:3000/categories/';
-  bookInfoApi = 'http://localhost:3000/bookInfo/';
+  bookInfoApi = 'books';
   usersApi = 'http://localhost:3000/accounts/';
   subscribesApi = 'http://localhost:3000/subscribes/';
   desiredApi = 'http://localhost:3000/desired/';
   stockApi = 'http://localhost:3000/stock/';
   unwantedApi = 'http://localhost:3000/unwanted/';
   commentsApi = 'http://localhost:3000/comments/';
-  constructor(private http: HttpClient) {}
+  loggedIn: any;
+  apiBooks = '/api/books';
+  token: any;
+  constructor(private http: HttpClient, private router: Router) {}
   getBooks() {
     return this.http.get<Book[]>(this.bookInfoApi);
   }
@@ -38,9 +42,26 @@ export class DataService {
   getUsersData(id): Observable<Account[]> {
     return this.http.get<Account[]>(this.usersApi + id);
   }
-  login(data): Observable<any>{
-    return this.http.post(`http://localhost:3000/accounts/`, data);
+  register(data): Observable<any>{
+    return this.http.post(`register`, data);
   }
+
+  login(login, password) {
+    this.http.post('login', {login, password}).subscribe(res => {
+      this.token = res;
+      localStorage.setItem('token', 'Bearer ' + this.token.token);
+      localStorage.setItem('user', JSON.stringify(this.token.user));
+    });
+  }
+
+  logout() {
+    localStorage.removeItem('token');
+    localStorage.removeItem('user');
+    this.loggedIn = false;
+    this.router.navigate(['/']);
+    window.location.reload();
+  }
+
   getSubscribes() {
     return this.http.get<Book[]>(this.subscribesApi);
   }

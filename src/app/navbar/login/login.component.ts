@@ -34,22 +34,33 @@ export class LoginComponent implements OnInit {
   loginProcess(value: any){
     this.login = this.loginValue;
     this.password = this.passwordValue;
-    if (this.User.find(x => x.login === this.login)){
-      this.user = this.User.find(x => x.login === this.login);
-      if (this.user.password === this.password){
-        this.loggedIn = true;
-        this.ID = this.user.id;
-        this.IsLoggedIn.emit(this.loggedIn);
-        this.accountID.emit(this.ID);
-        this.router.navigate(['']);
-        this.globalVars.globalID = this.user.id;
-        alert("Рады вас видеть " + this.user.login + " :)");
-      }else {
-        alert("Ой, что-то пошло не так :(");
-      }
+    this.dataService.login(this.login, this.password);
+    if (this.getToken().length > 1) {
+      this.loggedIn = true;
+      this.ID = this.user.id;
+      this.IsLoggedIn.emit(this.loggedIn);
+      this.accountID.emit(this.ID);
+      this.router.navigate(['']);
+      this.globalVars.globalID = this.user.id;
+      alert('Рады вас видеть ' + this.user.login + ' :)');
     } else {
-      alert("Ой, что-то пошло не так :(");
+      alert('Ой, что-то пошло не так :(');
     }
+
+  }
+
+  getToken() {
+    if (localStorage.getItem('token') != null) {
+      this.setUser();
+      return localStorage.getItem('token');
+    } else {
+      return '';
+    }
+  }
+
+  setUser() {
+    this.user = localStorage.getItem('user');
+    this.user = JSON.parse(this.user);
   }
 
   ngOnChanges(changes: SimpleChanges) {

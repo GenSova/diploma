@@ -32,6 +32,7 @@ export class NavbarComponent implements OnInit {
       .subscribe(data => this.userData = data);
   }
   logOut(){
+    this.dataService.logout();
     this.loginStatus = false;
   }
   ngOnInit(): void {

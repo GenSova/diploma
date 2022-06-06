@@ -15,6 +15,7 @@ export class RegistrationComponent implements OnInit {
   ngOnInit(): void {
     this.initForm();
   }
+
   initForm(){
     this.formGroup = new FormGroup({
       email: new FormControl('', [Validators.required]),
@@ -23,9 +24,10 @@ export class RegistrationComponent implements OnInit {
       login: new FormControl('', [Validators.required])
     });
   }
+
   registrationProcess(){
     if (this.formGroup.valid) {
-      this.authService.login(this.formGroup.value).subscribe(result => {
+      this.authService.register(this.formGroup.value).subscribe(result => {
         alert('Вы успешно зарегистрировались :)');
         this.router.navigate(['/'])
           .then(() => {
